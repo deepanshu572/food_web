@@ -1,0 +1,411 @@
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(Fonts/Gilroy-SemiBold.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-Black;
+    src: url(Fonts/Gilroy-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-Medium;
+    src: url(Fonts/Gilroy-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: Gilroy-Light;
+    src: url(Fonts/Gilroy-Light.ttf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy-SemiBold;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #eef8ff;
+    overflow: hidden;
+  }
+  .nav1 h2{
+    color: #FF8000;
+    font-size: 2vw;
+    margin-left: 41px;
+  }
+  nav {
+    padding: 1.8rem 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ .nav2{
+    width: 27vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav2 a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.9vw;
+    font-weight: 100;
+    font-family: Gilroy-Medium;
+}
+.nav3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+     width: 12vw;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.nav3 input {
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.8rem 25px;
+}
+
+.nav3 i  {
+    position: absolute;
+    z-index: 99;
+    left: 2px;
+    font-size: 14px;
+}
+.nav-main{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav4{
+    width: 3vw;
+    background-color: #FF8000;
+    height: 100%;
+    text-align: center;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+.box {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width: 100%;
+    /* height: 100vh; */
+    padding: 7rem 0px;
+    padding-left: 10vw;
+}
+.text{
+  width: 48vw;
+  height: 100%;
+}
+.text .first{
+    font-family: Gilroy-Black;
+    font-size: 6vw;
+}
+.text .second{
+  font-family: Gilroy-light;
+    font-size: 6vw;
+}
+.text p {
+   color: #B0B1B1;
+   width: 29vw;
+   padding-bottom: 20px;
+}
+#flex{
+  display: flex;
+  width: 22vw;
+  height: 5vh;
+  align-items: center;
+
+}
+#flex input{
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 11vw;
+  width: 18vw;
+  flex-direction: column;
+  padding: 11px;
+  height: 6vh;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.text i{
+position: absolute;
+    left: 26vw;
+    width: 20vw;
+    color: orange;
+}
+.text button{
+  border: none;
+  color: white;
+  width: 9vw;
+  height: 6vh;
+  background-color: orange;
+  display: flex;
+  border-radius: 13px;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  /* background-color: #FF8000; */
+}
+#bg{
+   width: 33vw;
+
+} 
+.all{
+      position: absolute;
+  width: 30vw;
+  height: 30vw;
+ /* background-color: #FF8000;  */
+  animation: circle 15s infinite linear;
+} 
+.img1 {
+  width: 12vw;
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  animation: circle 20s infinite linear;
+}
+.img2  {
+  width: 20vw;
+  position: absolute;
+  bottom: -18%;
+  right: 0%;
+  animation: circle 20s infinite linear;
+}
+.img3 {
+  width: 18vw;
+  position: absolute;
+  top: 0%;
+  left: -12%;
+  animation: circle 20s infinite linear;
+ 
+}
+@keyframes circle {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+#glass {
+  font-family: Gilroy-Light;
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+  width: 20vw;
+  height: 20vh;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.glass1{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 1vw;
+  padding: 6px 11px;
+}
+.glass1 img{
+  width: 3vw;
+}
+.glass2 {
+  display: flex;
+  width: 3vw;
+  text-align: center;
+  background-color: #eef8ff;
+  align-items: center;
+  padding: 2px;
+  gap: 6px;
+  border-radius: 16px;
+}
+.glass2 i{
+  color: orange;
+  font-size: 0.7vw;
+}
+#glass p{
+  font-family: Gilroy-Light;
+  padding: 1px 2vw;
+}
+.resp-nav {
+  display: none;
+}
+.resp-nav bi bi-x {
+display: none;
+}
+
+@media (max-width:500px) {
+   #main{
+        height: auto;
+        min-height: 100vh;
+    }
+  .nav-main{
+    display: none;
+  }
+  .nav2{
+    display: none;
+  }
+  bi bi-list{
+    font-size: 4vw;
+  }
+  .nav1 h2 {
+    font-size: 6vw;
+    margin-left: 0px;
+}
+.box{
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0rem 0px;
+  padding-left: 10vw;
+}
+.i1{
+  font-size: 5vw;
+}
+.resp-nav {
+position: absolute;
+width: 100%;
+height: 100vh;
+display: initial;
+background-color: #fff;
+right: -100%;
+top: 0%;
+z-index: 9;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.resp-nav a {
+     color: #333333;
+     text-decoration: none;
+     font-size: 5vw;
+  }
+.resp-nav .i2{
+  position: absolute;
+  z-index: 99;
+  top: 28px;
+  right: 51px;
+  font-size: 7vw;
+  }
+  .all {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    /* background-color: #FF8000; */
+    animation: circle 15s infinite linear;
+}
+.img1 {
+  width: 32vw;
+  position: absolute;
+  top: -41%;
+  right: -102%;
+  animation: circle 20s infinite linear;
+}
+.img2 {
+  width: 42vw;
+  position: absolute;
+  bottom: -114%;
+  right: -9%;
+  animation: circle 20s infinite linear;
+}
+.img3 {
+  width: 38vw;
+  position: absolute;
+  top: -71%;
+  left: -103%;
+  animation: circle 20s infinite linear;
+}
+#bg {
+  width: 70vw;
+}
+.img{
+  width: 80vw;
+  padding: 3rem;
+}
+nav {
+ gap: 41px;
+}
+.glass1 {
+  gap: 8vw;
+  padding: 2px 4px;
+}
+.glass2 {
+  width: 10vw;
+  padding: 2px;
+  gap: 6px;
+}
+.glass2 i {
+  font-size: 3vw;
+}
+.glass2 {
+  /* width: 10vw; */
+  gap: 6px;
+}
+.glass1 img {
+  width: 10vw;
+}
+#glass p {
+  font-family: Gilroy-Light;
+  padding: 1px 2vw;
+  width: 56vw;
+}
+#glass {
+  bottom: 75vw;
+  right: 0%;
+  width: 53vw;
+  height: 25vh;
+}
+.text {
+  width: 65vw;
+}
+.text p {
+  width: 67vw;
+}
+#flex {
+  width: 15vw;
+  height: 5vh;
+  gap: 3rem;
+}
+#flex input {
+  width: 50vw;
+  height: 6vh;
+}
+.text i {
+  left: 56vw;
+  width: 2vw;
+}
+.text button {
+  width: 24vw;
+  height: 6vh;
+  font-size: 3vw;
+}
+
+}
